@@ -13,7 +13,7 @@
 	let inputMessage = '';
 
 	function connect() {
-		ws = new WebSocket(`ws://localhost:3000?username=${$Username}&room=${data.room}`);
+		ws = new WebSocket(`ws://ws.archer.fyi?username=${$Username}&room=${data.room}`);
 
 		ws.onmessage = function (event) {
 			const message = JSON.parse(event.data);
